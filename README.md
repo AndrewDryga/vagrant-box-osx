@@ -4,6 +4,10 @@ This is a issue tracker for OS X Mavericks Vagrant box, which can be found on [V
 
 Box was tested only on VirtualBox. Mainly, I made it to build our iOS applications via CI-server.
 
+Warning
+--
+VirtualBox support for Mac OS X is experimental. More information can be found in [official docs](https://www.virtualbox.org/manual/ch03.html#intro-macosxguests).
+
 What's included?
 --
 * [Homebrew](http://brew.sh/)
