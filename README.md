@@ -16,7 +16,7 @@ Known issues
 --
 * Do not turn 3D acceleration on, or your Box will start retuning aborted condition and would not not start in headless mode
 * VirtualBox doen's have Guest additions for Mac OS X, so you can't have shared folders. Instead you can use normal network shared folders
-* Probably some licensing issues with Apple TOS
+* Apple's EULA states that you can install your copy on your actual Apple-hardware, plus up to two VMs running on your Apple-hardware. So using this box on another hardware is may be illigal
 
 Tips to build you'r own box
 --
