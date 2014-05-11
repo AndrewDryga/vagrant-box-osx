@@ -1,3 +1,7 @@
+Hosting issues
+--
+I can't host this image on VagrantCloud anymore, since Apple didn't let them to distribute VMs with their softare, I will try to give you direct link to the box shortly
+
 Mac OS X Mavericks Vagrant box for VirtualBox
 =========================
 This is a issue tracker for OS X Mavericks Vagrant box, which can be found on [VagrantCloud](https://vagrantcloud.com/AndrewDryga/osx-mavericks). Also there are backup copy available by [direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box).
