@@ -1,12 +1,12 @@
-Hosting issues
---
-I can't host this image on VagrantCloud anymore, since Apple didn't let them to distribute VMs with their softare, I will try to give you direct link to the box shortly
-
 Mac OS X Mavericks Vagrant box for VirtualBox
 =========================
-This is a issue tracker for OS X Mavericks Vagrant box, which can be found on [VagrantCloud](https://vagrantcloud.com/AndrewDryga/osx-mavericks). Also there are backup copy available by [direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box).
+This is a issue tracker for OS X Mavericks Vagrant box, which can be found on [VagrantCloud](https://vagrantcloud.com/AndrewDryga/osx-mavericks). Also there are backup copy available by [direct link to DigitalOcean](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box) and to [Amazon AWS (faster)](https://s3-eu-west-1.amazonaws.com/dryga.files/osx-mavericks-0.1.0.box).
 
 Box was tested only on VirtualBox. Mainly, I made it to build our iOS applications via CI-server.
+
+Hosting issues
+--
+I can't host this image on VagrantCloud anymore, since Apple didn't let them to distribute VMs with their softare, you can use direct link to the box instead.
 
 Warning
 --
