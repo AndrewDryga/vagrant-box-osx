@@ -1,6 +1,6 @@
 Mac OS X Mavericks Vagrant box for VirtualBox
 =========================
-This is a issue tracker for OS X Mavericks Vagrant box, which can be found on [VagrantCloud](https://vagrantcloud.com/AndrewDryga/osx-mavericks). Also there are backup copy available by [direct link to DigitalOcean](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box) and to [Amazon AWS (faster)](https://s3-eu-west-1.amazonaws.com/dryga.files/osx-mavericks-0.1.0.box).
+This is a issue tracker for OS X Mavericks Vagrant box, which can be found on [direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box)(it might be slow). (VagrantCloud refused to host this package.)
 
 Box was tested only on VirtualBox. Mainly, I made it to build our iOS applications via CI-server.
 
