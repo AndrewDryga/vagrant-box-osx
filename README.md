@@ -25,6 +25,7 @@ Known issues
 * Do not turn 3D acceleration on, or your Box will start retuning aborted condition and would not start in headless mode
 * VirtualBox doen's have Guest additions for Mac OS X, so you can't have shared folders. Instead you can use normal network shared folders
 * Apple's EULA states that you can install your copy on your actual Apple-hardware, plus up to two VMs running on your Apple-hardware. So using this box on another hardware is may be illigal
+* If you face VM freezed on message ```hfs mounted macintosh hd on device root_device``` then you need to set cpuidset inside your Vagrantfile: ```vb.customize ["modifyvm", :id, "--cpuidset", "1","000206a7","02100800","1fbae3bf","bfebfbff"]```
 
 Tips to build you'r own box
 --
