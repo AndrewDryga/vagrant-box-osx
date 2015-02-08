@@ -1,12 +1,15 @@
-Mac OS X Mavericks Vagrant box for VirtualBox
+Mac OS X Vagrant box for VirtualBox
 =========================
-This is a issue tracker for OS X Mavericks Vagrant box, which can be found on [direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box), but it might be slow. (VagrantCloud refused to host this package.)
+This is a issue tracker for OS X Vagrant boxes, which can be found in Download section
 
 Box was tested only on VirtualBox. Mainly, I made it to build our iOS applications via CI-server.
 
-Hosting issues
+Downloads
 --
-I can't host this image on VagrantCloud anymore, since Apple didn't let them to distribute VMs with their softare, you can use direct link to the box instead.
+Since VagrantCloud can't host this images, you can use direct links to download them. Download speed may be slow.
+
+* Mac OS X Maverics 10.9 (XCode 5.1): [direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box)
+* Mas OS X Yosemite 10.10 (XCode 6.1): [direct link](http://files.dryga.com/boxes/osx-yosemite-0.2.0.box)
 
 Warning
 --
@@ -16,8 +19,8 @@ What's included?
 --
 * [Homebrew](http://brew.sh/)
 * [Homebrew Cask](https://github.com/phinze/homebrew-cask)
-* Puppet (without puppetmaster)
-* XCode 5.1
+* Puppet
+* XCode 5.1/6.1
 * XCode Command Line Tools
 
 Known issues
