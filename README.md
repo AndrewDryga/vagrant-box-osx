@@ -13,10 +13,11 @@ Since VagrantCloud can't host this images, you can use direct links to download 
 
 Setting up
 --
-1. Install [Vagrant](https://docs.vagrantup.com/v2/installation/);
+1. Install [Vagrant](https://docs.vagrantup.com/v2/installation/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads);
 2. ```cd``` into your project directory;
-3. Run ```vagrant up http://files.dryga.com/boxes/osx-yosemite-0.2.0.box```;
-4. Your Vagrantfile should be ready as soon as Vagrant downloads box.
+3. Run ```vagrant init http://files.dryga.com/boxes/osx-yosemite-0.2.0.box```;
+4. Your Vagrantfile should be ready as soon as Vagrant downloads box;
+5. Start VM by calling ```vagrant up```.
 
 Warning
 --
