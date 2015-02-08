@@ -2,7 +2,7 @@ Mac OS X Vagrant box for VirtualBox
 =========================
 This is a issue tracker for OS X Vagrant boxes, which can be found in Download section
 
-Box was tested only on VirtualBox. Mainly, I made it to build our iOS applications via CI-server.
+Box was tested only on VirtualBox with Mac OS as a host. Mainly, I made it to build our iOS applications via CI-server.
 
 Downloads
 --
@@ -10,6 +10,13 @@ Since VagrantCloud can't host this images, you can use direct links to download 
 
 * Mac OS X Maverics 10.9 (XCode 5.1): [direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box)
 * Mas OS X Yosemite 10.10 (XCode 6.1): [direct link](http://files.dryga.com/boxes/osx-yosemite-0.2.0.box)
+
+Setting up
+--
+1. Install [Vagrant](https://docs.vagrantup.com/v2/installation/);
+2. ```cd``` into your project directory;
+3. Run ```vagrant up http://files.dryga.com/boxes/osx-yosemite-0.2.0.box```;
+4. Your Vagrantfile should be ready as soon as Vagrant downloads box.
 
 Warning
 --
