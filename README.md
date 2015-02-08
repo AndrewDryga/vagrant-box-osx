@@ -8,8 +8,8 @@ Downloads
 --
 Since VagrantCloud can't host this images, you can use direct links to download them. Download speed may be slow.
 
-* Mac OS X Maverics 10.9 (XCode 5.1): [direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box)
-* Mas OS X Yosemite 10.10 (XCode 6.1): [direct link](http://files.dryga.com/boxes/osx-yosemite-0.2.0.box)
+* Mac OS X Maverics 10.9 (XCode 5.1): [v0.1.0, direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box)
+* Mas OS X Yosemite 10.10 (XCode 6.1): [v0.2.0, direct link ](http://files.dryga.com/boxes/osx-yosemite-0.2.0.box)
 
 Setting up
 --
