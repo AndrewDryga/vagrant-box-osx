@@ -39,29 +39,11 @@ What's included?
 
 How to accept the Xcode License from the CLI
 --
+In early versions of this box you need to accept XCode license by you own.
 
-This step can be skipped if you have already accepted the Xcode license or
-installed an unmolested version of `git`/etc..
-
-If you see a warning like the following:
-
-```shell
-$ git
-
-
-Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.
-```
-
-Run this command:
+If you face error: ```Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.```, just run this command:
 ```shell
 sudo xcodebuild -license accept
-```
-
-Then verify that the license warning is gone:
-```shell
-# sanity check
-$ git --version
-git version 1.8.5.2 (Apple Git-48)
 ```
 
 Known issues
