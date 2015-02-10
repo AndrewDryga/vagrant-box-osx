@@ -13,6 +13,10 @@ Since VagrantCloud can't host this images, you can use direct links to download 
 * Mac OS X Maverics 10.9 (XCode 5.1): [v0.1.0, direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box)
 * Mas OS X Yosemite 10.10 (XCode 6.1): [v0.2.0, direct link ](http://files.dryga.com/boxes/osx-yosemite-0.2.0.box)
 
+OS X Licensing
+--
+Apple's EULA states that you can install your copy on your actual Apple-hardware, plus up to two VMs running on your Apple-hardware. So using this box on another hardware is may be illigal and you should do it on your own risk.
+
 Setting up
 --
 1. Install [Vagrant](https://docs.vagrantup.com/v2/installation/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads);
@@ -64,7 +68,6 @@ Known issues
 --
 * Do not turn 3D acceleration on, or your Box will start retuning aborted condition and would not start in headless mode
 * VirtualBox doen's have Guest additions for Mac OS X, so you can't have shared folders. Instead you can use normal network shared folders
-* Apple's EULA states that you can install your copy on your actual Apple-hardware, plus up to two VMs running on your Apple-hardware. So using this box on another hardware is may be illigal
 * If you face VM freezed on message ```hfs mounted macintosh hd on device root_device``` then you need to set cpuidset inside your Vagrantfile: ```vb.customize ["modifyvm", :id, "--cpuidset", "1","000206a7","02100800","1fbae3bf","bfebfbff"]```
 
 Tips to build your own box
