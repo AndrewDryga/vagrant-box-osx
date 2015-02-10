@@ -4,6 +4,8 @@ This is a issue tracker for OS X Vagrant boxes, which can be found in Download s
 
 Box was tested only on VirtualBox with Mac OS as a host. Mainly, I made it to build our iOS applications via CI-server.
 
+Also you might be interesed to take look at [radeksimko/vagrant-osx](https://github.com/radeksimko/vagrant-osx) that can build boxes for VMWare Vagrant provider.
+
 Downloads
 --
 Since VagrantCloud can't host this images, you can use direct links to download them. Download speed may be slow.
