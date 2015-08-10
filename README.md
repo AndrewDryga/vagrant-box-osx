@@ -50,7 +50,7 @@ Useful cli tools and information
 Common issues
 --
 * Do not turn 3D acceleration on in VirtualBox, or it will start retuning aborted condition and would not start in headless mode;
-* VirtualBox doesn't have Guest additions for Mac OS X, so you can't have shared folders. Instead you can use normal network shared folders (NFS):
+* VirtualBox doesn't have Guest additions for Mac OS X, so you can't have shared folders. Instead you can use normal network shared folders ([docs](http://docs.vagrantup.com/v2/synced-folders/nfs.html)):
 ```
     # Use NFS for the shared folder
     config.vm.synced_folder ".", "/vagrant",
