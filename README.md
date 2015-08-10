@@ -49,8 +49,15 @@ Useful cli tools and information
 
 Common issues
 --
-* VirtualBox doen's have Guest additions for Mac OS X, so you can't have shared folders. Instead you can use normal network shared folders;
 * Do not turn 3D acceleration on in VirtualBox, or it will start retuning aborted condition and would not start in headless mode;
+* VirtualBox doesn't have Guest additions for Mac OS X, so you can't have shared folders. Instead you can use normal network shared folders (NFS):
+```
+    # Use NFS for the shared folder
+    config.vm.synced_folder ".", "/vagrant",
+        id: "core",
+        :nfs => true,
+        :mount_options => ['nolock,vers=3,udp,noatime']
+```
 * If you face VM freezed on message ```hfs mounted macintosh hd on device root_device``` then you need to set cpuidset inside your Vagrantfile: ```vb.customize ["modifyvm", :id, "--cpuidset", "1","000206a7","02100800","1fbae3bf","bfebfbff"]``` (it's included since version 0.2);
 * If your mouse does not work on a MacBook Pro host machine, shut down the VM and open the VirtualBox Manager. Edit the VM's settings. Choose the _System_ tab. Under the _Motherboard_ sub-tab, set the _Chipset_ option to be _PIIX 3_, and set the _Pointing Device_ option to be _USB Tablet_. Restart the VM;
 * When OSX is trying to prompt graphically for password (i.e when using swift REPL), it will raise the error ```error:process exited with status -1) (lost connection)``` because there is no graphical output when using vagrant via ssh login, enable the develop mode can solve this situation, run the following command:
