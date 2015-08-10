@@ -13,9 +13,7 @@ Since VagrantCloud can't host this images, you can use direct links to download 
 * Mac OS X Maverics 10.9 (XCode 5.1): [v0.1.0, direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box)
 * Mas OS X Yosemite 10.10 (XCode 6.4): [v0.2.1, direct link](http://files.dryga.com/boxes/osx-yosemite-0.2.1.box)
 
-OS X Licensing
---
-Apple's EULA states that you can install your copy on your actual Apple-hardware, plus up to two VMs running on your Apple-hardware. So using this box on another hardware is may be illigal and you should do it on your own risk.
+Also you can download boxes from Hashicorp Atlas page [AndrewDryga/vagrant-box-osx/](https://atlas.hashicorp.com/AndrewDryga/boxes/vagrant-box-osx/)  (if it's accessable at the moment), or simply by starting with ```vagrant init AndrewDryga/vagrant-box-osx``` instead of url.
 
 Setting up
 --
@@ -25,9 +23,9 @@ Setting up
 4. Your Vagrantfile should be ready as soon as Vagrant downloads box;
 5. Start VM by calling ```vagrant up```.
 
-Warning
+OS X Licensing
 --
-VirtualBox support for Mac OS X is experimental. More information can be found in [official docs](https://www.virtualbox.org/manual/ch03.html#intro-macosxguests).
+Apple's EULA states that you can install your copy on your actual Apple-hardware, plus up to two VMs running on your Apple-hardware. So using this box on another hardware is may be illigal and you should do it on your own risk.
 
 What's included?
 --
@@ -64,6 +62,10 @@ Common issues
 ```sudo /usr/sbin/DevToolsSecurity --enable```;
 * In early versions of this box you need to accept XCode license by you own. If you face error: ```Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.```, just run this command: ```sudo xcodebuild -license accept```;
 * If you need user password (for example for Homebrew Cask). Vagrant have default consideration to create user ```vagrant``` with password ```vagrant```, you can use it.
+
+Warning
+--
+VirtualBox support for Mac OS X is experimental. More information can be found in [official docs](https://www.virtualbox.org/manual/ch03.html#intro-macosxguests).
 
 Tips to build your own box
 --
