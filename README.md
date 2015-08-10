@@ -11,7 +11,7 @@ Downloads
 Since VagrantCloud can't host this images, you can use direct links to download them. Download speed may be slow.
 
 * Mac OS X Maverics 10.9 (XCode 5.1): [v0.1.0, direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box)
-* Mas OS X Yosemite 10.10 (XCode 6.1): [v0.2.0, direct link ](http://files.dryga.com/boxes/osx-yosemite-0.2.0.box)
+* Mas OS X Yosemite 10.10 (XCode 6.4): [v0.2.1, direct link](http://files.dryga.com/boxes/osx-yosemite-0.2.1.box)
 
 OS X Licensing
 --
@@ -21,7 +21,7 @@ Setting up
 --
 1. Install [Vagrant](https://docs.vagrantup.com/v2/installation/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads);
 2. ```cd``` into your project directory;
-3. Run ```vagrant init http://files.dryga.com/boxes/osx-yosemite-0.2.0.box```;
+3. Run ```vagrant init http://files.dryga.com/boxes/osx-yosemite-0.2.1.box```;
 4. Your Vagrantfile should be ready as soon as Vagrant downloads box;
 5. Start VM by calling ```vagrant up```.
 
@@ -33,9 +33,12 @@ What's included?
 --
 * [Homebrew](http://brew.sh/)
 * [Homebrew Cask](https://github.com/phinze/homebrew-cask)
-* Puppet
-* XCode 5.1/6.1
+* Puppet 3.7.4
+* XCode 5.1/6.4
 * XCode Command Line Tools
+* NodeJS 0.12.7 (for npm)
+* Appium 1.4.10
+* iOS Simulator (all devices for iOS 8.4)
 
 How to accept the Xcode License from the CLI
 --
@@ -46,11 +49,18 @@ If you face error: ```Agreeing to the Xcode/iOS license requires admin privilege
 sudo xcodebuild -license accept
 ```
 
+Useful cli tools and information
+--
+* [Nomad CLI](http://nomad-cli.com/) - provides a set of tools that allow to manage certificates, profiles and many other things;
+* [ObjC.io Issue 6](http://www.objc.io/issues/6-build-tools/travis-ci/) - how-to article about building apps in cli-only (this one about Travis-Ci);
+* ```security``` - use it to manage your keychains;
+* [xctool](https://github.com/facebook/xctool) - Facebook project for building iOS apps.
+
 Known issues
 --
 * Do not turn 3D acceleration on, or your Box will start retuning aborted condition and would not start in headless mode
 * VirtualBox doen's have Guest additions for Mac OS X, so you can't have shared folders. Instead you can use normal network shared folders
-* If you face VM freezed on message ```hfs mounted macintosh hd on device root_device``` then you need to set cpuidset inside your Vagrantfile: ```vb.customize ["modifyvm", :id, "--cpuidset", "1","000206a7","02100800","1fbae3bf","bfebfbff"]```
+* If you face VM freezed on message ```hfs mounted macintosh hd on device root_device``` then you need to set cpuidset inside your Vagrantfile: ```vb.customize ["modifyvm", :id, "--cpuidset", "1","000206a7","02100800","1fbae3bf","bfebfbff"]``` (it's included since version 0.2)
 
 Tips to build your own box
 --
