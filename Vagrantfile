@@ -42,6 +42,10 @@ Vagrant.configure(2) do |config|
     # Customize NAT DNS
     # v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     # v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+
+    # Set resolution on OSX
+    # Values: 0 = 640x480, 1 = 800x600, 2 = 1024x768, 3 = 1280x1024, 4 = 1440x900, 5 = 1920x1200
+    # vb.customize ["setextradata", :id, "VBoxInternal2/EfiGopMode", "4"]
   end
 
   # Enable provisioning with a shell script.
