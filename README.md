@@ -29,15 +29,23 @@ Apple's EULA states that you can install your copy on your actual Apple-hardware
 
 What's included?
 --
-* [Default Vagrantfile](https://github.com/AndrewDryga/vagrant-box-osx/blob/master/src/include/_Vagrantfile) (inside box) that fixes most of common issues.
-* [Homebrew](http://brew.sh/)
-* [Homebrew Cask](https://github.com/phinze/homebrew-cask)
-* Puppet 3.7.4
-* XCode 5.1/6.4
-* XCode Command Line Tools
-* NodeJS 0.12.7 (for npm)
-* Appium 1.4.10
-* iOS Simulator (all devices for iOS 8.4)
+Yosemite box:
+* [Default Vagrantfile](https://github.com/AndrewDryga/vagrant-box-osx/blob/master/src/include/_Vagrantfile) (inside box) that fixes most of common issues;
+* [Homebrew](http://brew.sh/);
+* [Homebrew Cask](https://github.com/phinze/homebrew-cask);
+* Puppet 3.7.4;
+* XCode 6.4;
+* XCode Command Line Tools;
+* NodeJS 0.12.7 (for npm);
+* Appium 1.4.10;
+* iOS Simulator (all devices for iOS 8.4).
+
+Maverics box:
+* Default Vagrantfile that fixes shared folders and CPU ID
+* [Homebrew](http://brew.sh/);
+* [Homebrew Cask](https://github.com/phinze/homebrew-cask);
+* XCode 5.1;
+* XCode Command Line Tools;
 
 Useful cli tools and information
 --
