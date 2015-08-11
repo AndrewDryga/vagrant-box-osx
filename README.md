@@ -29,6 +29,7 @@ Apple's EULA states that you can install your copy on your actual Apple-hardware
 
 What's included?
 --
+* [Default Vagrantfile](https://github.com/AndrewDryga/vagrant-box-osx/blob/master/src/include/_Vagrantfile) (inside box) that fixes most of common issues.
 * [Homebrew](http://brew.sh/)
 * [Homebrew Cask](https://github.com/phinze/homebrew-cask)
 * Puppet 3.7.4
