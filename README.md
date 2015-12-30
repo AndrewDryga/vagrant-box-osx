@@ -4,7 +4,7 @@ This is a issue tracker for OS X Vagrant boxes, which can be found in Download s
 
 Box was tested only on VirtualBox with Mac OS as a host. Mainly, I made it to build our iOS applications via CI-server.
 
-Also you might be interesed to take look at [radeksimko/vagrant-osx](https://github.com/radeksimko/vagrant-osx) that can build boxes for VMWare Vagrant provider.
+Also you might be interested to take look at [radeksimko/vagrant-osx](https://github.com/radeksimko/vagrant-osx) that can build boxes for VMWare Vagrant provider.
 
 Downloads
 --
@@ -13,7 +13,7 @@ Since VagrantCloud can't host this images, you can use direct links to download 
 * Mac OS X Maverics 10.9 (XCode 5.1): [v0.1.0, direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box) (10Gb)
 * Mas OS X Yosemite 10.10 (XCode 6.4): [v0.2.1, direct link](http://files.dryga.com/boxes/osx-yosemite-0.2.1.box) (13Gb)
 
-Also you can download boxes from Hashicorp Atlas page [AndrewDryga/vagrant-box-osx/](https://atlas.hashicorp.com/AndrewDryga/boxes/vagrant-box-osx/)  (if it's accessable at the moment), or simply by starting with ```vagrant init AndrewDryga/vagrant-box-osx``` instead of url.
+Also you can download boxes from Hashicorp Atlas page [AndrewDryga/vagrant-box-osx/](https://atlas.hashicorp.com/AndrewDryga/boxes/vagrant-box-osx/)  (if it's accessible at the moment), or simply by starting with ```vagrant init AndrewDryga/vagrant-box-osx``` instead of url.
 
 Setting up
 --
@@ -25,7 +25,7 @@ Setting up
 
 OS X Licensing
 --
-Apple's EULA states that you can install your copy on your actual Apple-hardware, plus up to two VMs running on your Apple-hardware. So using this box on another hardware is may be illigal and you should do it on your own risk.
+Apple's EULA states that you can install your copy on your actual Apple-hardware, plus up to two VMs running on your Apple-hardware. So using this box on another hardware is may be illegal and you should do it on your own risk.
 
 What's included?
 --
@@ -65,7 +65,7 @@ Common issues
         :nfs => true,
         :mount_options => ['nolock,vers=3,udp,noatime']
 ```
-* If you face VM freezed on message ```hfs mounted macintosh hd on device root_device``` then you need to set cpuidset inside your Vagrantfile: ```vb.customize ["modifyvm", :id, "--cpuidset", "1","000206a7","02100800","1fbae3bf","bfebfbff"]``` (it's included since version 0.2);
+* If your VM freezes with ```hfs mounted macintosh hd on device root_device``` then you need to set cpuidset inside your Vagrantfile: ```vb.customize ["modifyvm", :id, "--cpuidset", "1","000206a7","02100800","1fbae3bf","bfebfbff"]``` (it's included since version 0.2);
 * If your mouse does not work on a MacBook Pro host machine, shut down the VM and open the VirtualBox Manager. Edit the VM's settings. Choose the _System_ tab. Under the _Motherboard_ sub-tab, set the _Chipset_ option to be _PIIX 3_, and set the _Pointing Device_ option to be _USB Tablet_. Restart the VM;
 * When OSX is trying to prompt graphically for password (i.e when using swift REPL), it will raise the error ```error:process exited with status -1) (lost connection)``` because there is no graphical output when using vagrant via ssh login, enable the develop mode can solve this situation, run the following command:
 ```sudo /usr/sbin/DevToolsSecurity --enable```;
