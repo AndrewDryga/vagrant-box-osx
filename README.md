@@ -4,8 +4,6 @@ This is a issue tracker for OS X Vagrant boxes, which can be found in Download s
 
 Box was tested only on VirtualBox with Mac OS as a host. Mainly, I made it to build our iOS applications via CI-server.
 
-Also you might be interested to take look at [radeksimko/vagrant-osx](https://github.com/radeksimko/vagrant-osx) that can build boxes for VMWare Vagrant provider.
-
 Downloads
 --
 Since VagrantCloud can't host this images, you can use direct links to download them. Download speed may be slow.
@@ -26,6 +24,8 @@ Setting up
 OS X Licensing
 --
 Apple's EULA states that you can install your copy on your actual Apple-hardware, plus up to two VMs running on your Apple-hardware. So using this box on another hardware is may be illegal and you should do it on your own risk.
+
+By using it you agree with all macOS Sierra and XCode license agreements.
 
 What's included?
 --
@@ -90,3 +90,4 @@ Helpful links (most of them are outdated):
 - [Another guide by Lifehacker](http://lifehacker.com/5583650/run-mac-os-x-in-virtualbox-on-windows/all)
 - [Legal question](http://www.tomshardware.co.uk/answers/id-1802838/illegal-run-osx-virtual-box.html)
 - [How to disable default mounting of shared folder](https://github.com/mitchellh/vagrant/issues/1004)
+- Also you might be interested to take look at [radeksimko/vagrant-osx](https://github.com/radeksimko/vagrant-osx) that can build boxes for VMWare Vagrant provider.
