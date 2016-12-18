@@ -10,6 +10,7 @@ Since VagrantCloud can't host this images, you can use direct links to download 
 
 * Mac OS X Maverics 10.9 (XCode 5.1): [v0.1.0, direct link](http://files.dryga.com/boxes/osx-mavericks-0.1.0.box) (10Gb)
 * Mas OS X Yosemite 10.10 (XCode 6.4): [v0.2.1, direct link](http://files.dryga.com/boxes/osx-yosemite-0.2.1.box) (13Gb)
+* macOS Sierra (XCode 8.2): [v0.3.1, direct link](http://files.dryga.com/boxes/osx-sierra-0.3.1.box) (13Gb)
 
 Also you can download boxes from Hashicorp Atlas page [AndrewDryga/vagrant-box-osx/](https://atlas.hashicorp.com/AndrewDryga/boxes/vagrant-box-osx/)  (if it's accessible at the moment), or simply by starting with ```vagrant init AndrewDryga/vagrant-box-osx``` instead of url.
 
@@ -17,7 +18,7 @@ Setting up
 --
 1. Install [Vagrant](https://docs.vagrantup.com/v2/installation/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads);
 2. ```cd``` into your project directory;
-3. Run ```vagrant init http://files.dryga.com/boxes/osx-yosemite-0.2.1.box```;
+3. Run ```vagrant init http://files.dryga.com/boxes/osx-sierra-0.3.1.box```;
 4. Your Vagrantfile should be ready as soon as Vagrant downloads box;
 5. Start VM by calling ```vagrant up```.
 
@@ -29,6 +30,15 @@ By using it you agree with all macOS Sierra and XCode license agreements.
 
 What's included?
 --
+Sierra box:
+* [Default Vagrantfile](https://github.com/AndrewDryga/vagrant-box-osx/blob/master/src/include/_Vagrantfile) (inside box) that fixes most of common issues;
+* [Homebrew](http://brew.sh/);
+* [Homebrew Cask](https://github.com/phinze/homebrew-cask);
+* NodeJS 7.2.1 (npm 3.10.10, n 2.1.3);
+* Lunchy;
+* Puppet 4.8.1;
+* XCode 8.2 (and XCode Command Line Tools).
+
 Yosemite box:
 * [Default Vagrantfile](https://github.com/AndrewDryga/vagrant-box-osx/blob/master/src/include/_Vagrantfile) (inside box) that fixes most of common issues;
 * [Homebrew](http://brew.sh/);
