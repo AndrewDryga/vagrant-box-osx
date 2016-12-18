@@ -43,9 +43,11 @@ Vagrant.configure(2) do |config|
     # v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
     # v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
 
-    # Set resolution on OSX
+    # Set resolution on macOS
     # Values: 0 = 640x480, 1 = 800x600, 2 = 1024x768, 3 = 1280x1024, 4 = 1440x900, 5 = 1920x1200
-    # vb.customize ["setextradata", :id, "VBoxInternal2/EfiGopMode", "4"]
+    # vb.customize ["setextradata", :id, "VBoxInternal2/EfiGopMode", "5"]
+    # vb.customize ["setextradata", :id, "CustomVideoMode1", "1920x1080x32"]
+    # vb.customize ["setextradata", :id, "GUI/CustomVideoMode1", "1920x1080x32"]
   end
 
   # Enable provisioning with a shell script.
