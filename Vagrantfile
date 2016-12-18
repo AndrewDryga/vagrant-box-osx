@@ -27,7 +27,8 @@ Vagrant.configure(2) do |config|
   # config.vm.synced_folder ".", "/vagrant",
   #   id: "vagrant-root",
   #   :nfs => true,
-  #   :mount_options => ['nolock,vers=3,udp,noatime']
+  #   :mount_options => ['nolock,vers=3,udp,noatime,actimeo=1,resvport'],
+  #   :export_options => ['async,insecure,no_subtree_check,no_acl,no_root_squash']
 
   config.vm.provider "virtualbox" do |vb|
     # Display the VirtualBox GUI when booting the machine. You might want to turn 3D accelerating to speed-up VM GUI.
