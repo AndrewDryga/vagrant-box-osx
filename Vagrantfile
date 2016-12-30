@@ -41,8 +41,8 @@ Vagrant.configure(2) do |config|
     # vb.customize ["modifyvm", :id, "--chipset", "ich9"]
 
     # Customize NAT DNS
-    # v.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
-    # v.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
+    # vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+    # vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
 
     # Set resolution on macOS
     # Values: 0 = 640x480, 1 = 800x600, 2 = 1024x768, 3 = 1280x1024, 4 = 1440x900, 5 = 1920x1200
