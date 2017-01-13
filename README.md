@@ -58,6 +58,7 @@ Useful cli tools and information
 
 Common issues
 --
+* Box may [crash on AMD-based hosts](https://github.com/AndrewDryga/vagrant-box-osx/issues/52) due to VirtualBox issues.
 * Do not turn 3D acceleration on in VirtualBox, or it will start retuning aborted condition and would not start in headless mode;
 * VirtualBox doesn't have Guest additions for Mac OS X, so you can't have shared folders. Instead you can use normal network shared folders ([docs](http://docs.vagrantup.com/v2/synced-folders/nfs.html)):
 ```
@@ -71,7 +72,6 @@ Common issues
 * If your mouse does not work on a MacBook Pro host machine, shut down the VM and open the VirtualBox Manager. Edit the VM's settings. Choose the _System_ tab. Under the _Motherboard_ sub-tab, set the _Chipset_ option to be _PIIX 3_, and set the _Pointing Device_ option to be _USB Tablet_. Restart the VM;
 * When OSX is trying to prompt graphically for password (i.e when using swift REPL), it will raise the error ```error:process exited with status -1) (lost connection)``` because there is no graphical output when using vagrant via ssh login, enable the develop mode can solve this situation, run the following command:
 ```sudo /usr/sbin/DevToolsSecurity --enable```;
-* In early versions of this box you need to accept XCode license by you own. If you face error: ```Agreeing to the Xcode/iOS license requires admin privileges, please re-run as root via sudo.```, just run this command: ```sudo xcodebuild -license accept```;
 * If you need user password (for example for Homebrew Cask). Vagrant have default consideration to create user ```vagrant``` with password ```vagrant```, you can use it.
 
 Warning
