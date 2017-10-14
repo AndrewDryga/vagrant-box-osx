@@ -96,6 +96,6 @@ Helpful links (most of them are outdated):
 
 Sponsors
 --
-I want to thang DigitalOcean for providing a free storage for box images.
+I want to thank DigitalOcean for providing a free storage for box images.
 
-<img src="https://www.digitalocean.com/assets/media/logos-badges/png/DO_Powered_by_Badge_blue-fe4c6688.png" width="150" />
+<a href="https://www.digitalocean.com/products/object-storage/"><img src="https://www.digitalocean.com/assets/media/logos-badges/png/DO_Powered_by_Badge_blue-fe4c6688.png" width="150" /></a>
