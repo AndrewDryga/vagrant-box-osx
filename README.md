@@ -93,3 +93,9 @@ Helpful links (most of them are outdated):
 - [Legal question](http://www.tomshardware.co.uk/answers/id-1802838/illegal-run-osx-virtual-box.html)
 - [How to disable default mounting of shared folder](https://github.com/mitchellh/vagrant/issues/1004)
 - Also you might be interested to take look at [radeksimko/vagrant-osx](https://github.com/radeksimko/vagrant-osx) that can build boxes for VMWare Vagrant provider.
+
+Sponsors
+--
+I want to thang DigitalOcean for providing a free storage for box images.
+
+<img src="https://www.digitalocean.com/assets/media/logos-badges/png/DO_Powered_by_Badge_blue-fe4c6688.png" width="150" />
