@@ -17,7 +17,7 @@ Setting up
 --
 1. Install [Vagrant](https://docs.vagrantup.com/v2/installation/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads);
 2. ```cd``` into your project directory;
-3. Run ```vagrant init http://files.dryga.com/boxes/osx-sierra-0.3.1.box```;
+3. Run ```vagrant init https://vagrant-osx.nyc3.digitaloceanspaces.com/osx-sierra-0.3.1.box```;
 4. Your Vagrantfile should be ready as soon as Vagrant downloads box;
 5. Start VM by calling ```vagrant up```.
 
