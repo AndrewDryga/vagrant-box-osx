@@ -49,6 +49,8 @@ Vagrant.configure(2) do |config|
     # vb.customize ["setextradata", :id, "VBoxInternal2/EfiGopMode", "5"]
     # vb.customize ["setextradata", :id, "CustomVideoMode1", "1920x1080x32"]
     # vb.customize ["setextradata", :id, "GUI/CustomVideoMode1", "1920x1080x32"]
+    # This one is specific to some Linux hosts to be able to change the resolution
+    # vb.customize ["setextradata", :id, "VBoxInternal2/EfiGraphicsResolution", "1920x1080x32"]
   end
 
   # Enable provisioning with a shell script.
