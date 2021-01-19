@@ -8,7 +8,7 @@ Downloads
 --
 You can find following images on [VagrantCloud](https://app.vagrantup.com/AndrewDryga/boxes/vagrant-box-osx):
 
-* Mac OS X Yosemite 10.10 (XCode 6.4) (13Gb) (sha1: e02ea7fff9c3af980bfa733c8feb2e03bf562cfd)
+* Mac OS X Yosemite 10.10 (XCode 6.4) (13Gb) (sha1: 6339bf812017b9f0046d9fdda79cc6f3d2ab169a)
 * macOS Sierra (XCode 8.2) (14.1Gb)
 
 Notice it can take a while to download the image as they are large and can be throtled by VagrantCloud hosting.
