@@ -2,11 +2,8 @@
 # vi: set ft=ruby :
 
 Vagrant.configure(2) do |config|
-  # Use box from Atlas
-  # config.vm.box = "AndrewDryga/vagrant-box-osx"
-
-  # Use box from url (if Atlas is down)
-  config.vm.box = "http://files.dryga.com/boxes/osx-sierra-0.3.1.box"
+  # Use box from Vagrant Cloud
+  config.vm.box = "AndrewDryga/vagrant-box-osx"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
