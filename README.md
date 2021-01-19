@@ -6,18 +6,18 @@ Box was tested only on VirtualBox with Mac OS as a host. Mainly, I made it to bu
 
 Downloads
 --
-Since VagrantCloud can't host this images, you can use direct links to download them. Download speed may be slow.
+You can find following images on [VagrantCloud](https://app.vagrantup.com/AndrewDryga/boxes/vagrant-box-osx):
 
-* Mac OS X Yosemite 10.10 (XCode 6.4): [v0.2.1, direct link](https://vagrant-osx.nyc3.digitaloceanspaces.com/osx-yosemite-0.2.1.box) (13Gb) (sha1: e02ea7fff9c3af980bfa733c8feb2e03bf562cfd)
-* macOS Sierra (XCode 8.2): [v0.3.1, direct link](https://vagrant-osx.nyc3.digitaloceanspaces.com/osx-sierra-0.3.1.box) (14.1Gb)
+* Mac OS X Yosemite 10.10 (XCode 6.4) (13Gb) (sha1: e02ea7fff9c3af980bfa733c8feb2e03bf562cfd)
+* macOS Sierra (XCode 8.2) (14.1Gb)
 
-Also you can download older boxes from Hashicorp Atlas page [AndrewDryga/vagrant-box-osx/](https://atlas.hashicorp.com/AndrewDryga/boxes/vagrant-box-osx/) (if it's accessible at the moment), or simply by starting with ```vagrant init AndrewDryga/vagrant-box-osx``` instead of url.
+Notice it can take a while to download the image as they are large and can be throtled by VagrantCloud hosting.
 
 Setting up
 --
 1. Install [Vagrant](https://docs.vagrantup.com/v2/installation/) and [VirtualBox](https://www.virtualbox.org/wiki/Downloads);
 2. ```cd``` into your project directory;
-3. Run ```vagrant init https://vagrant-osx.nyc3.digitaloceanspaces.com/osx-sierra-0.3.1.box```;
+3. Run ```vagrant init AndrewDryga/vagrant-box-osx```;
 4. Your Vagrantfile should be ready as soon as Vagrant downloads box;
 5. Start VM by calling ```vagrant up```.
 
@@ -94,8 +94,3 @@ Helpful links (most of them are outdated):
 - [How to disable default mounting of shared folder](https://github.com/mitchellh/vagrant/issues/1004)
 - Also you might be interested to take look at [radeksimko/vagrant-osx](https://github.com/radeksimko/vagrant-osx) that can build boxes for VMWare Vagrant provider.
 
-Sponsors
---
-I want to thank DigitalOcean for providing a free storage for box images.
-
-<a href="https://www.digitalocean.com/products/object-storage/"><img src="https://www.digitalocean.com/assets/media/logos-badges/png/DO_Powered_by_Badge_blue-fe4c6688.png" width="150" /></a>
